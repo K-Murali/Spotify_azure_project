@@ -2,7 +2,7 @@
 
 ## Pipeline Architecture
 
-![Pipeline Architecture](./assets/pipeline_architecture.png)
+![Pipeline Architecture](./assets/Untitled%20Diagram4.png)
 
 The pipeline follows a medallion architecture pattern with the following stages:
 - **Ingestion Pipeline**: Incremental loading, back-filling, and alerts
