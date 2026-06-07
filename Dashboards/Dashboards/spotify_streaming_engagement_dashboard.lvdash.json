@@ -1,0 +1,1473 @@
+{
+  "datasets": [
+    {
+      "name": "2f979702",
+      "displayName": "cube_device_preference",
+      "config": {
+        "dimensions": [
+          {
+            "displayName": "Subscription Type",
+            "expr": "source.subscription_type",
+            "name": "subscription_type"
+          },
+          {
+            "displayName": "Device Type",
+            "expr": "source.device_type",
+            "name": "device_type"
+          },
+          {
+            "displayName": "Total Streams",
+            "expr": "source.total_streams",
+            "name": "total_streams"
+          },
+          {
+            "displayName": "Unique Users",
+            "expr": "source.unique_users",
+            "name": "unique_users"
+          },
+          {
+            "displayName": "Avg Listen Sec",
+            "expr": "source.avg_listen_sec",
+            "name": "avg_listen_sec"
+          },
+          {
+            "displayName": "Abandon Rate Pct",
+            "expr": "source.abandon_rate_pct",
+            "name": "abandon_rate_pct"
+          },
+          {
+            "displayName": "Device Rank In Plan",
+            "expr": "source.device_rank_in_plan",
+            "name": "device_rank_in_plan"
+          }
+        ],
+        "measures": [
+          {
+            "displayName": "Count",
+            "expr": "COUNT(*)",
+            "name": "count"
+          }
+        ],
+        "source": "spotify_catalog.view.cube_device_preference",
+        "version": "1.1"
+      }
+    },
+    {
+      "name": "74684cdd",
+      "displayName": "cube_monthly_growth",
+      "config": {
+        "dimensions": [
+          {
+            "displayName": "Year",
+            "expr": "source.year",
+            "name": "year"
+          },
+          {
+            "displayName": "Month",
+            "expr": "source.month",
+            "name": "month"
+          },
+          {
+            "displayName": "Total Streams",
+            "expr": "source.total_streams",
+            "name": "total_streams"
+          },
+          {
+            "displayName": "Active Users",
+            "expr": "source.active_users",
+            "name": "active_users"
+          },
+          {
+            "displayName": "Total Listen Hrs",
+            "expr": "source.total_listen_hrs",
+            "name": "total_listen_hrs"
+          },
+          {
+            "displayName": "Streams Per User",
+            "expr": "source.streams_per_user",
+            "name": "streams_per_user"
+          },
+          {
+            "displayName": "Prev Month Streams",
+            "expr": "source.prev_month_streams",
+            "name": "prev_month_streams"
+          },
+          {
+            "displayName": "Mom Growth Pct",
+            "expr": "source.mom_growth_pct",
+            "name": "mom_growth_pct"
+          }
+        ],
+        "measures": [
+          {
+            "displayName": "Count",
+            "expr": "COUNT(*)",
+            "name": "count"
+          }
+        ],
+        "source": "spotify_catalog.view.cube_monthly_growth",
+        "version": "1.1"
+      }
+    },
+    {
+      "name": "3fc4de49",
+      "displayName": "cube_platinum_users",
+      "config": {
+        "dimensions": [
+          {
+            "displayName": "User Name",
+            "expr": "source.user_name",
+            "name": "user_name"
+          },
+          {
+            "displayName": "User Country",
+            "expr": "source.user_country",
+            "name": "user_country"
+          },
+          {
+            "displayName": "Subscription Type",
+            "expr": "source.subscription_type",
+            "name": "subscription_type"
+          },
+          {
+            "displayName": "Total Streams",
+            "expr": "source.total_streams",
+            "name": "total_streams"
+          },
+          {
+            "displayName": "Meaningful Plays",
+            "expr": "source.meaningful_plays",
+            "name": "meaningful_plays"
+          },
+          {
+            "displayName": "Engagement Score",
+            "expr": "source.engagement_score",
+            "name": "engagement_score"
+          },
+          {
+            "displayName": "Rank In Tier",
+            "expr": "source.rank_in_tier",
+            "name": "rank_in_tier"
+          }
+        ],
+        "measures": [
+          {
+            "displayName": "Count",
+            "expr": "COUNT(*)",
+            "name": "count"
+          }
+        ],
+        "source": "spotify_catalog.view.cube_platinum_users",
+        "version": "1.1"
+      }
+    },
+    {
+      "name": "ba892b9d",
+      "displayName": "cube_premium_vs_free_genre",
+      "config": {
+        "dimensions": [
+          {
+            "displayName": "Genre",
+            "expr": "source.genre",
+            "name": "genre"
+          },
+          {
+            "displayName": "Subscription Type",
+            "expr": "source.subscription_type",
+            "name": "subscription_type"
+          },
+          {
+            "displayName": "Total Streams",
+            "expr": "source.total_streams",
+            "name": "total_streams"
+          },
+          {
+            "displayName": "Unique Users",
+            "expr": "source.unique_users",
+            "name": "unique_users"
+          },
+          {
+            "displayName": "Meaningful Play Rate Pct",
+            "expr": "source.meaningful_play_rate_pct",
+            "name": "meaningful_play_rate_pct"
+          },
+          {
+            "displayName": "Genre Rank In Plan",
+            "expr": "source.genre_rank_in_plan",
+            "name": "genre_rank_in_plan"
+          }
+        ],
+        "measures": [
+          {
+            "displayName": "Count",
+            "expr": "COUNT(*)",
+            "name": "count"
+          }
+        ],
+        "source": "spotify_catalog.view.cube_premium_vs_free_genre",
+        "version": "1.1"
+      }
+    },
+    {
+      "name": "ca00f99e",
+      "displayName": "cube_top10_tracks",
+      "config": {
+        "dimensions": [
+          {
+            "displayName": "Track Name",
+            "expr": "source.track_name",
+            "name": "track_name"
+          },
+          {
+            "displayName": "Artist Name",
+            "expr": "source.artist_name",
+            "name": "artist_name"
+          },
+          {
+            "displayName": "Genre",
+            "expr": "source.genre",
+            "name": "genre"
+          },
+          {
+            "displayName": "Total Streams",
+            "expr": "source.total_streams",
+            "name": "total_streams"
+          },
+          {
+            "displayName": "Unique Listeners",
+            "expr": "source.unique_listeners",
+            "name": "unique_listeners"
+          },
+          {
+            "displayName": "Total Listen Hrs",
+            "expr": "source.total_listen_hrs",
+            "name": "total_listen_hrs"
+          },
+          {
+            "displayName": "Avg Completion Pct",
+            "expr": "source.avg_completion_pct",
+            "name": "avg_completion_pct"
+          },
+          {
+            "displayName": "Skip Rate Pct",
+            "expr": "source.skip_rate_pct",
+            "name": "skip_rate_pct"
+          },
+          {
+            "displayName": "Track Rank",
+            "expr": "source.track_rank",
+            "name": "track_rank"
+          }
+        ],
+        "measures": [
+          {
+            "displayName": "Count",
+            "expr": "COUNT(*)",
+            "name": "count"
+          }
+        ],
+        "source": "spotify_catalog.view.cube_top10_tracks",
+        "version": "1.1"
+      }
+    }
+  ],
+  "pages": [
+    {
+      "name": "6e4ee6f9",
+      "displayName": "KPI 1 Genre Engagement",
+      "layout": [
+        {
+          "widget": {
+            "name": "genre_streams_by_plan",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ba892b9d",
+                  "fields": [
+                    {
+                      "name": "subscription_type",
+                      "expression": "`subscription_type`"
+                    },
+                    {
+                      "name": "unique_users",
+                      "expression": "`unique_users`"
+                    },
+                    {
+                      "name": "meaningful_play_rate_pct",
+                      "expression": "`meaningful_play_rate_pct`"
+                    },
+                    {
+                      "name": "genre",
+                      "expression": "`genre`"
+                    },
+                    {
+                      "name": "total_streams",
+                      "expression": "`total_streams`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "encodings": {
+                "color": {
+                  "fieldName": "subscription_type",
+                  "legend": {
+                    "position": "right",
+                    "title": "Subscription Type"
+                  },
+                  "scale": {
+                    "mappings": [
+                      {
+                        "color": {
+                          "position": 7,
+                          "themeColorType": "visualizationColors"
+                        },
+                        "value": "Free"
+                      }
+                    ],
+                    "type": "categorical"
+                  }
+                },
+                "extra": [
+                  {
+                    "fieldName": "unique_users"
+                  },
+                  {
+                    "fieldName": "meaningful_play_rate_pct"
+                  }
+                ],
+                "label": {
+                  "show": true
+                },
+                "x": {
+                  "axis": {
+                    "title": "Genre"
+                  },
+                  "displayName": "Genre",
+                  "fieldName": "genre",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "axis": {
+                    "title": "Total Streams"
+                  },
+                  "displayName": "Total Streams",
+                  "fieldName": "total_streams",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                }
+              },
+              "frame": {
+                "description": "Compare stream volume across genres for each subscription plan.",
+                "showTitle": true,
+                "title": "Streams by Genre and Plan"
+              },
+              "version": 3,
+              "widgetType": "bar"
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 9
+          }
+        },
+        {
+          "widget": {
+            "name": "genre_engagement_detail",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ba892b9d",
+                  "fields": [
+                    {
+                      "name": "genre",
+                      "expression": "`genre`"
+                    },
+                    {
+                      "name": "subscription_type",
+                      "expression": "`subscription_type`"
+                    },
+                    {
+                      "name": "total_streams",
+                      "expression": "`total_streams`"
+                    },
+                    {
+                      "name": "unique_users",
+                      "expression": "`unique_users`"
+                    },
+                    {
+                      "name": "meaningful_play_rate_pct",
+                      "expression": "`meaningful_play_rate_pct`"
+                    },
+                    {
+                      "name": "genre_rank_in_plan",
+                      "expression": "`genre_rank_in_plan`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "displayRowNumbers": true,
+              "encodings": {
+                "columns": [
+                  {
+                    "displayName": "Genre",
+                    "fieldName": "genre"
+                  },
+                  {
+                    "displayName": "Subscription",
+                    "fieldName": "subscription_type"
+                  },
+                  {
+                    "displayName": "Streams",
+                    "fieldName": "total_streams"
+                  },
+                  {
+                    "displayName": "Users",
+                    "fieldName": "unique_users"
+                  },
+                  {
+                    "displayName": "Meaningful Play Rate",
+                    "fieldName": "meaningful_play_rate_pct"
+                  },
+                  {
+                    "displayName": "Genre Rank in Plan",
+                    "fieldName": "genre_rank_in_plan"
+                  }
+                ]
+              },
+              "frame": {
+                "description": "Volume and quality metrics by genre and plan.",
+                "showTitle": true,
+                "title": "Genre engagement detail"
+              },
+              "rowsPerPage": 10,
+              "version": 2,
+              "widgetType": "table"
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 9,
+            "width": 12,
+            "height": 10
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    },
+    {
+      "name": "kpi2_top_tracks",
+      "displayName": "KPI 2 Top Tracks",
+      "layout": [
+        {
+          "widget": {
+            "name": "top_tracks_by_listen_hours",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ca00f99e",
+                  "fields": [
+                    {
+                      "name": "genre",
+                      "expression": "`genre`"
+                    },
+                    {
+                      "name": "artist_name",
+                      "expression": "`artist_name`"
+                    },
+                    {
+                      "name": "track_rank",
+                      "expression": "`track_rank`"
+                    },
+                    {
+                      "name": "total_streams",
+                      "expression": "`total_streams`"
+                    },
+                    {
+                      "name": "unique_listeners",
+                      "expression": "`unique_listeners`"
+                    },
+                    {
+                      "name": "avg_completion_pct",
+                      "expression": "`avg_completion_pct`"
+                    },
+                    {
+                      "name": "skip_rate_pct",
+                      "expression": "`skip_rate_pct`"
+                    },
+                    {
+                      "name": "track_name",
+                      "expression": "`track_name`"
+                    },
+                    {
+                      "name": "total_listen_hrs",
+                      "expression": "`total_listen_hrs`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "encodings": {
+                "color": {
+                  "fieldName": "genre",
+                  "legend": {
+                    "position": "right",
+                    "title": "Genre"
+                  },
+                  "scale": {
+                    "mappings": [
+                      {
+                        "color": {
+                          "position": 1,
+                          "themeColorType": "visualizationColors"
+                        },
+                        "value": "Soul"
+                      },
+                      {
+                        "color": {
+                          "position": 3,
+                          "themeColorType": "visualizationColors"
+                        },
+                        "value": "Classical"
+                      },
+                      {
+                        "color": {
+                          "position": 9,
+                          "themeColorType": "visualizationColors"
+                        },
+                        "value": "Rock"
+                      }
+                    ],
+                    "type": "categorical"
+                  }
+                },
+                "extra": [
+                  {
+                    "fieldName": "artist_name"
+                  },
+                  {
+                    "fieldName": "track_rank"
+                  },
+                  {
+                    "fieldName": "total_streams"
+                  },
+                  {
+                    "fieldName": "unique_listeners"
+                  },
+                  {
+                    "fieldName": "avg_completion_pct"
+                  },
+                  {
+                    "fieldName": "skip_rate_pct"
+                  }
+                ],
+                "label": {
+                  "show": true
+                },
+                "x": {
+                  "axis": {
+                    "labelAngle": 90,
+                    "title": "Track"
+                  },
+                  "fieldName": "track_name",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "axis": {
+                    "title": "Total Listen Hours"
+                  },
+                  "fieldName": "total_listen_hrs",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                }
+              },
+              "frame": {
+                "description": "Top 10 tracks ranked by total listen hours.",
+                "showTitle": true,
+                "title": "Top tracks by listen hours"
+              },
+              "version": 3,
+              "widgetType": "bar"
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "top_tracks_detail",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ca00f99e",
+                  "fields": [
+                    {
+                      "name": "track_name",
+                      "expression": "`track_name`"
+                    },
+                    {
+                      "name": "artist_name",
+                      "expression": "`artist_name`"
+                    },
+                    {
+                      "name": "genre",
+                      "expression": "`genre`"
+                    },
+                    {
+                      "name": "total_streams",
+                      "expression": "`total_streams`"
+                    },
+                    {
+                      "name": "unique_listeners",
+                      "expression": "`unique_listeners`"
+                    },
+                    {
+                      "name": "total_listen_hrs",
+                      "expression": "`total_listen_hrs`"
+                    },
+                    {
+                      "name": "avg_completion_pct",
+                      "expression": "`avg_completion_pct`"
+                    },
+                    {
+                      "name": "skip_rate_pct",
+                      "expression": "`skip_rate_pct`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "displayRowNumbers": true,
+              "encodings": {
+                "columns": [
+                  {
+                    "displayName": "Track",
+                    "fieldName": "track_name"
+                  },
+                  {
+                    "displayName": "Artist",
+                    "fieldName": "artist_name"
+                  },
+                  {
+                    "displayName": "Genre",
+                    "fieldName": "genre"
+                  },
+                  {
+                    "displayName": "Streams",
+                    "fieldName": "total_streams"
+                  },
+                  {
+                    "displayName": "Listeners",
+                    "fieldName": "unique_listeners"
+                  },
+                  {
+                    "displayName": "Listen Hrs",
+                    "fieldName": "total_listen_hrs"
+                  },
+                  {
+                    "displayName": "Completion %",
+                    "fieldName": "avg_completion_pct"
+                  },
+                  {
+                    "displayName": "Skip Rate %",
+                    "fieldName": "skip_rate_pct"
+                  }
+                ]
+              },
+              "frame": {
+                "description": "Top song performance for royalty, recommendation, and quality analysis.",
+                "showTitle": true,
+                "title": "Top tracks detail"
+              },
+              "rowsPerPage": 10,
+              "version": 2,
+              "widgetType": "table"
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 8,
+            "width": 12,
+            "height": 8
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    },
+    {
+      "name": "kpi3_device_subscription",
+      "displayName": "KPI 3 Device + Subscription",
+      "layout": [
+        {
+          "widget": {
+            "name": "device_streams_by_plan",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "2f979702",
+                  "fields": [
+                    {
+                      "name": "subscription_type",
+                      "expression": "`subscription_type`"
+                    },
+                    {
+                      "name": "unique_users",
+                      "expression": "`unique_users`"
+                    },
+                    {
+                      "name": "avg_listen_sec",
+                      "expression": "`avg_listen_sec`"
+                    },
+                    {
+                      "name": "abandon_rate_pct",
+                      "expression": "`abandon_rate_pct`"
+                    },
+                    {
+                      "name": "device_type",
+                      "expression": "`device_type`"
+                    },
+                    {
+                      "name": "sum(total_streams)",
+                      "expression": "SUM(`total_streams`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "encodings": {
+                "color": {
+                  "fieldName": "subscription_type",
+                  "legend": {
+                    "position": "right",
+                    "title": "Subscription Type"
+                  },
+                  "scale": {
+                    "mappings": [
+                      {
+                        "color": {
+                          "position": 3,
+                          "themeColorType": "visualizationColors"
+                        },
+                        "value": "Free"
+                      },
+                      {
+                        "color": {
+                          "position": 7,
+                          "themeColorType": "visualizationColors"
+                        },
+                        "value": "Premium"
+                      }
+                    ],
+                    "type": "categorical"
+                  }
+                },
+                "extra": [
+                  {
+                    "fieldName": "unique_users"
+                  },
+                  {
+                    "fieldName": "avg_listen_sec"
+                  },
+                  {
+                    "fieldName": "abandon_rate_pct"
+                  }
+                ],
+                "label": {
+                  "show": true
+                },
+                "x": {
+                  "fieldName": "device_type",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(total_streams)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                }
+              },
+              "frame": {
+                "description": "Compare device usage between Premium and Free listeners.",
+                "showTitle": true,
+                "title": "Device streams by plan"
+              },
+              "mark": {
+                "layout": "group"
+              },
+              "version": 3,
+              "widgetType": "bar"
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "device_subscription_detail",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "2f979702",
+                  "fields": [
+                    {
+                      "name": "subscription_type",
+                      "expression": "`subscription_type`"
+                    },
+                    {
+                      "name": "device_type",
+                      "expression": "`device_type`"
+                    },
+                    {
+                      "name": "total_streams",
+                      "expression": "`total_streams`"
+                    },
+                    {
+                      "name": "unique_users",
+                      "expression": "`unique_users`"
+                    },
+                    {
+                      "name": "avg_listen_sec",
+                      "expression": "`avg_listen_sec`"
+                    },
+                    {
+                      "name": "abandon_rate_pct",
+                      "expression": "`abandon_rate_pct`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "displayRowNumbers": true,
+              "encodings": {
+                "columns": [
+                  {
+                    "displayName": "Subscription",
+                    "fieldName": "subscription_type"
+                  },
+                  {
+                    "displayName": "Device",
+                    "fieldName": "device_type"
+                  },
+                  {
+                    "displayName": "Streams",
+                    "fieldName": "total_streams"
+                  },
+                  {
+                    "displayName": "Users",
+                    "fieldName": "unique_users"
+                  },
+                  {
+                    "displayName": "Avg Listen Sec",
+                    "fieldName": "avg_listen_sec"
+                  },
+                  {
+                    "displayName": "Abandon Rate %",
+                    "fieldName": "abandon_rate_pct"
+                  }
+                ]
+              },
+              "frame": {
+                "description": "Plan and device engagement for product, UX, and infrastructure decisions.",
+                "showTitle": true,
+                "title": "Device subscription detail"
+              },
+              "rowsPerPage": 10,
+              "version": 2,
+              "widgetType": "table"
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 8,
+            "width": 12,
+            "height": 8
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    },
+    {
+      "name": "kpi4_monthly_trend",
+      "displayName": "KPI 4 Monthly Trend",
+      "layout": [
+        {
+          "widget": {
+            "name": "monthly_stream_trend",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "74684cdd",
+                  "fields": [
+                    {
+                      "name": "year",
+                      "expression": "`year`"
+                    },
+                    {
+                      "name": "active_users",
+                      "expression": "`active_users`"
+                    },
+                    {
+                      "name": "total_listen_hrs",
+                      "expression": "`total_listen_hrs`"
+                    },
+                    {
+                      "name": "mom_growth_pct",
+                      "expression": "`mom_growth_pct`"
+                    },
+                    {
+                      "name": "month",
+                      "expression": "`month`"
+                    },
+                    {
+                      "name": "total_streams",
+                      "expression": "`total_streams`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "encodings": {
+                "color": {
+                  "fieldName": "year",
+                  "legend": {
+                    "position": "right",
+                    "title": "Year"
+                  },
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "extra": [
+                  {
+                    "fieldName": "active_users"
+                  },
+                  {
+                    "fieldName": "total_listen_hrs"
+                  },
+                  {
+                    "fieldName": "mom_growth_pct"
+                  }
+                ],
+                "label": {
+                  "show": true
+                },
+                "x": {
+                  "axis": {
+                    "title": "Month"
+                  },
+                  "fieldName": "month",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "axis": {
+                    "title": "Total Streams"
+                  },
+                  "fieldName": "total_streams",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                }
+              },
+              "frame": {
+                "description": "Track monthly streams by year using the cube view; defaults to 2025 via the year selector.",
+                "showTitle": true,
+                "title": "Monthly stream trend"
+              },
+              "version": 3,
+              "widgetType": "line"
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 1,
+            "width": 12,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "monthly_trend_detail",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "74684cdd",
+                  "fields": [
+                    {
+                      "name": "year",
+                      "expression": "`year`"
+                    },
+                    {
+                      "name": "month",
+                      "expression": "`month`"
+                    },
+                    {
+                      "name": "total_streams",
+                      "expression": "`total_streams`"
+                    },
+                    {
+                      "name": "active_users",
+                      "expression": "`active_users`"
+                    },
+                    {
+                      "name": "total_listen_hrs",
+                      "expression": "`total_listen_hrs`"
+                    },
+                    {
+                      "name": "streams_per_user",
+                      "expression": "`streams_per_user`"
+                    },
+                    {
+                      "name": "mom_growth_pct",
+                      "expression": "`mom_growth_pct`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "displayRowNumbers": true,
+              "encodings": {
+                "columns": [
+                  {
+                    "displayName": "Year",
+                    "fieldName": "year"
+                  },
+                  {
+                    "displayName": "Month",
+                    "fieldName": "month"
+                  },
+                  {
+                    "displayName": "Streams",
+                    "fieldName": "total_streams"
+                  },
+                  {
+                    "displayName": "Active Users",
+                    "fieldName": "active_users"
+                  },
+                  {
+                    "displayName": "Listen Hrs",
+                    "fieldName": "total_listen_hrs"
+                  },
+                  {
+                    "displayName": "Streams per User",
+                    "fieldName": "streams_per_user"
+                  },
+                  {
+                    "displayName": "MoM Growth %",
+                    "fieldName": "mom_growth_pct"
+                  }
+                ]
+              },
+              "frame": {
+                "description": "Monthly health metrics for forecasting and engagement monitoring.",
+                "showTitle": true,
+                "title": "Monthly trend detail"
+              },
+              "rowsPerPage": 12,
+              "version": 2,
+              "widgetType": "table"
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 9,
+            "width": 12,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "year_selector_default",
+            "queries": [
+              {
+                "name": "dashboards/01f162250bc61eb7a11c8ce2c7d8784f/datasets/01f1622527911b5bb189fdbee32a1ca9_year",
+                "query": {
+                  "datasetName": "74684cdd",
+                  "fields": [
+                    {
+                      "name": "year",
+                      "expression": "`year`"
+                    },
+                    {
+                      "name": "year_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "disallowAll": true,
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "year",
+                    "queryName": "dashboards/01f162250bc61eb7a11c8ce2c7d8784f/datasets/01f1622527911b5bb189fdbee32a1ca9_year"
+                  }
+                ]
+              },
+              "frame": {
+                "description": "Defaults to 2025; add 2024 when needed.",
+                "showTitle": true,
+                "title": "Year selector"
+              },
+              "scale": {
+                "sort": {
+                  "by": "custom-order",
+                  "orderedValues": [
+                    2025,
+                    2024
+                  ]
+                },
+                "type": "categorical"
+              },
+              "selection": {
+                "defaultSelection": {
+                  "values": {
+                    "dataType": "INTEGER",
+                    "values": [
+                      {
+                        "value": "2025"
+                      }
+                    ]
+                  }
+                }
+              },
+              "version": 2,
+              "widgetType": "filter-multi-select"
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 17,
+            "width": 3,
+            "height": 1
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    },
+    {
+      "name": "kpi5_user_scorecard",
+      "displayName": "KPI 5 User Scorecard",
+      "layout": [
+        {
+          "widget": {
+            "name": "top_user_engagement_scores",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "3fc4de49",
+                  "fields": [
+                    {
+                      "name": "subscription_type",
+                      "expression": "`subscription_type`"
+                    },
+                    {
+                      "name": "user_country",
+                      "expression": "`user_country`"
+                    },
+                    {
+                      "name": "rank_in_tier",
+                      "expression": "`rank_in_tier`"
+                    },
+                    {
+                      "name": "user_name",
+                      "expression": "`user_name`"
+                    },
+                    {
+                      "name": "engagement_score",
+                      "expression": "`engagement_score`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "description": "Highest engagement-score users from the cube view.",
+                "showTitle": true,
+                "title": "Top users by engagement score"
+              },
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "user_name",
+                  "axis": {
+                    "title": "User"
+                  },
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "engagement_score",
+                  "axis": {
+                    "title": "Engagement Score"
+                  },
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "subscription_type",
+                  "legend": {
+                    "position": "right",
+                    "title": "Subscription Type"
+                  },
+                  "scale": {
+                    "type": "categorical",
+                    "mappings": [
+                      {
+                        "value": "Free",
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 10
+                        }
+                      }
+                    ]
+                  }
+                },
+                "label": {
+                  "show": true
+                },
+                "extra": [
+                  {
+                    "fieldName": "user_country"
+                  },
+                  {
+                    "fieldName": "rank_in_tier"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "user_scorecard_detail",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "3fc4de49",
+                  "fields": [
+                    {
+                      "name": "user_name",
+                      "expression": "`user_name`"
+                    },
+                    {
+                      "name": "subscription_type",
+                      "expression": "`subscription_type`"
+                    },
+                    {
+                      "name": "user_country",
+                      "expression": "`user_country`"
+                    },
+                    {
+                      "name": "engagement_score",
+                      "expression": "`engagement_score`"
+                    },
+                    {
+                      "name": "total_streams",
+                      "expression": "`total_streams`"
+                    },
+                    {
+                      "name": "meaningful_plays",
+                      "expression": "`meaningful_plays`"
+                    },
+                    {
+                      "name": "rank_in_tier",
+                      "expression": "`rank_in_tier`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "displayRowNumbers": true,
+              "encodings": {
+                "columns": [
+                  {
+                    "displayName": "User",
+                    "fieldName": "user_name"
+                  },
+                  {
+                    "displayName": "Subscription",
+                    "fieldName": "subscription_type"
+                  },
+                  {
+                    "displayName": "Country",
+                    "fieldName": "user_country"
+                  },
+                  {
+                    "displayName": "Score",
+                    "fieldName": "engagement_score"
+                  },
+                  {
+                    "displayName": "Streams",
+                    "fieldName": "total_streams"
+                  },
+                  {
+                    "displayName": "Meaningful Plays",
+                    "fieldName": "meaningful_plays"
+                  },
+                  {
+                    "displayName": "Rank in Tier",
+                    "fieldName": "rank_in_tier"
+                  }
+                ]
+              },
+              "frame": {
+                "description": "User value leaderboard for VIP, retention, and churn use cases.",
+                "showTitle": true,
+                "title": "User scorecard detail"
+              },
+              "rowsPerPage": 10,
+              "version": 2,
+              "widgetType": "table"
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 16,
+            "width": 12,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "5beececa",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "3fc4de49",
+                  "fields": [
+                    {
+                      "name": "measure(count)",
+                      "expression": "MEASURE(`count`)"
+                    },
+                    {
+                      "name": "user_country",
+                      "expression": "`user_country`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "encodings": {
+                "label": {
+                  "show": true
+                },
+                "x": {
+                  "axis": {
+                    "title": "Number of Users"
+                  },
+                  "fieldName": "measure(count)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "axis": {
+                    "title": "Country"
+                  },
+                  "fieldName": "user_country",
+                  "scale": {
+                    "sort": {
+                      "by": "x-reversed"
+                    },
+                    "type": "categorical"
+                  }
+                }
+              },
+              "frame": {
+                "description": "Count of users by country from the cube view.",
+                "showTitle": true,
+                "title": "Users by country"
+              },
+              "version": 3,
+              "widgetType": "bar"
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 8,
+            "width": 12,
+            "height": 8
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+    },
+    "applyModeEnabled": false
+  }
+}
