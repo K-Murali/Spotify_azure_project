@@ -12,13 +12,13 @@ The pipeline follows a medallion architecture pattern with the following stages:
 - **Gold Layer (L3)**: Aggregated data with KPI tables and business views for reporting
 - **Reporting & Delta Sharing**: Dashboards and delta sharing capabilities
 
-## ADF Incremental Data Ingestion
+##  Job Pipeline
 
 ![ADF Incremental Data Ingestion](./assets/Screenshot%202026-06-07%20214308.png)
 
 The Azure Data Factory (ADF) pipeline handles incremental data ingestion from Spotify APIs with optimized load patterns and watermark management for efficient data synchronization.
 
-## Job Pipeline
+## ADF Incremental Data Ingestion
 
 ![Job Pipeline](./assets/Screenshot%202026-06-07%20215352.png)
 
